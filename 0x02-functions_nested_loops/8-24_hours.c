@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+ * jack_bauber - func that prints every minute of the day of Jack Bauber, start
+ * n from 00:00 to 23:59, min loop counts mins, while hour loop counts hours
+ * Return: 0
+ */
+void jack_bauber(void)
+{
+	int hours = 0;
+	int minutes = 0;
+	int hours_reminder;
+	int mins_reminder;
+
+	while (hours <= 23)
+	{
+	while (minutes <= 59)
+	{
+	hours_reminder = hours % 10;
+	_putchar(hours / 10 + '0');
+	_putchar(hours_reminder + '0')
+	_putchar(':');
+	_putchar(minutes / 10 + '0');
+	_putchar(mins_reminder + '0');
+	minutes++;
+	_putchar('\n');
+	}
+	hours++;
+	minutes = 0;
+}
+}

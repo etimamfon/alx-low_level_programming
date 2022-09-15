@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_sign - function to check for a sign of a number
  * greater, equal or less than zero.
@@ -24,5 +25,4 @@ int print_sign(int n)
 	_putchar('0');
 	return (0);
 	}
-	_putchar('\n');
 }

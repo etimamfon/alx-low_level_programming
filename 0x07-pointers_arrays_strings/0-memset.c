@@ -1,5 +1,6 @@
+#include "main.h"
 /**
-* _memset - a function that fills
+* *_memset - a function that fills
 *         memory with a constant byte
 *
 * @s: input pointer to char type
@@ -17,16 +18,11 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-/**
-* declare an unsigned int
-* because we are storing a
-* value that will always be
-* non-negative (zero or positive)
-*/
-unsigned int i;
+	unsigned int i;
 
-for (i = 0; i < n; i++)
-s[i] = b;
-
-return (s);
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
 }
